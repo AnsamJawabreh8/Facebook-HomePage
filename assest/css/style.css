@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.icon{
+    background-color: rgb(74, 72, 72);
+}
+
+body,.dropdown-menu{
+    background-color: rgb(60, 60, 60);
+}
+.alert:hover{
+    background-color: rgb(108, 105, 105);
+}
+.not:hover{
+    background-color: rgb(108, 105, 105);
+ 
+}
+.main{
+    background-color: rgb(48, 48, 48);
+}
+.list:hover{
+    background-color: rgb(108, 105, 105);
+    cursor: pointer;
+}
+.col1{
+    height:100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.shortcut{
+    border-top: 1px solid rgb(127, 126, 122);
+}
+.friendReq{
+    border-bottom: 1px solid rgb(127, 126, 122);
+}
+.fri{
+    color: rgb(151, 150, 150);
+    font-weight: bolder;
+}
+.bir{
+    border-bottom: 1px solid rgb(127, 126, 122);
+}
+.bir p{
+    font-size: small;
+    font-weight: bold;
+}
+
+.cir{
+    width: 9px;
+    height: 9px;
+    top:18px;
+    right:6;
+    border: 1px solid rgb(22, 22, 22);
+}
+
+.down{
+    font-size: 10px;
+}
+.story{
+
+    border-radius:25px;
+}
+.part1{
+    
+    border-bottom: 1px solid rgb(74, 74, 73);
+}
+
+

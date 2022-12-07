@@ -1,0 +1,865 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assest/css/style.css" />
+    <link rel="stylesheet" href="assest/css/all.min.css">
+    <link rel="icon" href="assest/img/face.png">
+    <title>Facebook</title>
+  </head>
+  <body>
+    <!------------Header----------->
+
+    <div
+      class="header d-flex align-items-center shadow"
+      style="min-height: 55px;"
+    >
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <!---------------------mid side of nav/search ---------------->
+          <div class="col d-flex align-items-center ">
+            <img src="assest/img/face.png" alt="Profile photo" class="rounded-circle me-1 " style="width: 40px; height: 40px; object-fit: cover;">
+            <div class="input-group ms-2" type="button">
+              <!-- mobile View-->
+              <span
+                class="input-group-prepend d-lg-none"
+                id="searchMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+              >
+                <div
+                  class="input-group-text bg-gray border-0 rounded-circle"
+                  style="min-height: 40px"
+                >
+                  <i class="fas fa-search text-muted"></i>
+                </div>
+              </span>
+
+              <!-- Desktop View-->
+              <span
+                class="input-group-prepend d-none d-lg-block "
+                id="searchMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+              >
+                <div
+                  class="input-group-text  border-0 rounded-pill"
+                  style="min-height: 40px; min-width: 230px;color: rgb(212, 207, 207);background-color: rgb(78, 78, 78);"
+                >
+                  <i class="fas fa-search me-2 "></i>
+                  <p class="m-0 fs-7 ">Search in facebook</p>
+                </div>
+              </span>
+              <!-- search menu -->
+              <ul
+                class="dropdown-menu overflow-cursor border-0 shadow p-3"
+                aria-labelledby="searchMenu"
+                style="width: 20em; max-height: 600px"
+              >
+                <!-- search input -->
+            
+                <!-- search 1 -->
+                <li class="my-4 ">
+                  <div
+                    class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="assest/img/fi.jpg"
+                        alt="friend"
+                        class="rounded-circle me-2"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0 text-light">Ansam Jawabrah</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close p-0 m-0 text-light"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+
+                <!-- search 2 -->
+                <li class="my-4">
+                  <div
+                    class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="assest/img/6.jpg"
+                        alt="friend"
+                        class="rounded-circle me-2"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0 text-light">Dima Abu Jaber</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close p-0 m-0 text-light"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+                
+                <!-- search 3 -->
+                <li class="my-4">
+                  <div
+                    class="alert fade show  dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="assest/img/fo.jpg"
+                        alt="friend"
+                        class="rounded-circle me-2"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0 text-light">Abeer Hanayshi</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close p-0 m-0 text-light"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+                <!------------search4----->
+                <li class="my-4">
+                  <div
+                    class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="assest/img/f.jpg"
+                        alt="friend"
+                        class="rounded-circle me-2"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0 text-light">Aamal Kmail</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close p-0 m-0 text-light"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--------------mid side of nav------------------>
+          <div class="col d-none d-xl-flex justify-content-start">
+            <!-- home -->
+            <div class="mx-2 ">
+              <button type="button" class="btn px-2">
+                <i class="fa-solid fa-house fs-4" style="color:rgb(165, 163, 163) ;"></i>
+              </button>
+            </div>
+            <!-- watch -->
+            <div class="mx-3">
+              <button type="button" class="btn px-2">
+                <i class="fa-solid fa-tv fs-4" style="color:rgb(165, 163, 163) ;"></i>
+              </button>
+            </div>
+            <!-- group -->
+            <div class="mx-3 " >
+              <button type="button" class="btn px-2">
+                <i class="position-relative fas fa-users fs-4" style="color:rgb(165, 163, 163) ;">
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger justify-content-center pt-1"
+                    style="font-size:10px;width: 20px; height: 20px;"
+                  >
+                   3
+                    <span class="visually-hidden"></span>
+                  </span>
+                </i>
+              </button>
+            </div>
+            <!-- gaming -->
+            <div class="mx-3 nav__btn">
+              <button type="button" class="btn px-2">
+                <i class="fas fa-gamepad  fs-4" style="color:rgb(165, 163, 163) "></i>
+              </button>
+            </div>
+          </div>
+          <!---------------Right side of nav---------------------------------->
+           <div class="col d-flex justify-content-end align-items-center position-relative">
+
+            <div class="d-xl-flex justify-content-center align-items-center position-relative">
+              <img src="assest/img/fi.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 36px; height: 36px; object-fit: cover;">
+            </div>
+              
+            <!------------------notificatio------------>  
+            <div
+            class="icon rounded-circle d-flex align-items-center justify-content-center mx-1
+            "
+            style="width: 34px; height: 34px"
+            type="button"
+            id="plusMenu"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+          <i class="fa-solid fa-bell text-light"></i>
+          </div>
+
+            <ul class="dropdown-menu border-0 shadow p-3 overflow-y-cursor " aria-labelledby="plusMenu" style="width:300px ;height: 500px;">
+              <li>
+              <div class="not btn dropdown-item text-light d-flex" href="#">
+                <img src="assest/img/fo.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 36px; height: 36px; object-fit: cover;">
+                <p><strong>Dima Abu Jaber and others </strong><br>metioned you on post </p>
+              </div>
+            </li>
+            <li>
+              <div class="not btn dropdown-item text-light d-flex" href="#">
+                <img src="assest/img/farm.jpeg" alt="Profile photo" class="rounded-circle me-2" style="width: 36px; height: 36px; object-fit: cover;">
+                <p><strong>Dima Abu Jaber and others </strong><br>metioned you on post </p>
+              </div>
+            </li>
+            <li>
+              <div class="not btn dropdown-item text-light d-flex" href="#">
+                <img src="assest/img/sub.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 36px; height: 36px; object-fit: cover;">
+                <p><strong>Aamal Kmail and others </strong><br>metioned you on post </p>
+              </div>
+            </li>
+            <li>
+              <div class="not btn dropdown-item text-light d-flex" href="#">
+                <img src="assest/img/6.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 36px; height: 36px; object-fit: cover;">
+                <p><strong>Abeer Hanayshi and others </strong><br>metioned you on post </p>
+              </div>
+            </li>
+            <li>
+              <div class="not btn dropdown-item text-light d-flex" href="#">
+                <img src="assest/img/fo.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 36px; height: 36px; object-fit: cover;">
+                <p><strong>Dima Abu Jaber and others </strong><br>metioned you on post </p>
+              </div>
+            </li>
+            <li>
+              <div class="not btn dropdown-item text-light d-flex" href="#">
+                <img src="assest/img/profile-photo.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 36px; height: 36px; object-fit: cover;">
+                <p><strong>Ansam Jawabrah and others </strong><br>metioned you on post </p>
+              </div>
+            </li>
+            <li>
+              <div class="not btn dropdown-item text-light d-flex" href="#">
+                <img src="assest/img/fi.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 36px; height: 36px; object-fit: cover;">
+                <p><strong>Dima Abu Jaber and others </strong><br>metioned you on post </p>
+              </div>
+            </li>
+            </ul>
+          <!----------------------Massages------------------->
+            <div
+            class="icon rounded-circle d-flex align-items-center justify-content-center mx-1
+            "
+            style="width: 34px; height: 34px"
+            type="button"
+            id="plusMenu"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+          <i class="fa-brands fa-facebook-messenger text-light"></i>
+          </div>
+
+            <ul class="dropdown-menu border-0 shadow p-3 overflow-y-cursor " aria-labelledby="plusMenu" style="width:300px ;">
+              <li class="list dropdown-item  rounded d-flex p-1">
+                <div class=" position-relative">
+                  <img src="assest/img/th.jpg" alt="Profile photo" class="rounded-circle me-2 position-relative" style="width: 45px; height: 45px; object-fit: cover;">
+                </div> 
+              <p class=" text-light">Ansam Jawabrah</p> 
+  
+              </li>
+              <li class="list dropdown-item  rounded d-flex p-1 mt-2">
+                <div class=" position-relative">
+                  <img src="assest/img/fi.jpg" alt="Profile photo" class="rounded-circle me-2 position-relative" style="width: 45px; height: 45px; object-fit: cover;">
+                  <div class="cir position-absolute text-danger rounded-circle bg-success "></div>
+                </div> 
+             <p  class=" text-light">Marah Nazzal</p> 
+  
+              </li>
+              <li class="list dropdown-item  rounded d-flex p-1 mt-2">
+                <div class=" position-relative">
+                  <img src="assest/img/sub.jpg" alt="Profile photo" class="rounded-circle me-2 position-relative" style="width: 45px; height: 45px; object-fit: cover;">
+                </div> 
+             <p  class=" text-light">Ayam Reyad</p> 
+  
+              </li> 
+              <li class="list dropdown-item  rounded d-flex p-1 mt-2">
+                <div class=" position-relative">
+                  <img src="assest/img/2.jpg" alt="Profile photo" class="rounded-circle me-2 position-relative" style="width: 45px; height: 45px; object-fit: cover;">
+                  <div class="cir position-absolute text-danger rounded-circle bg-success "></div>
+                </div> 
+             <p  class=" text-light">Mona Rami</p> 
+  
+              </li>
+              <li class="list dropdown-item  rounded d-flex p-1 mt-2">
+                <div class=" position-relative">
+                  <img src="assest/img/1.jpg" alt="Profile photo" class="rounded-circle me-2 position-relative" style="width: 45px; height: 45px; object-fit: cover;">
+                  <div class="cir position-absolute text-danger rounded-circle bg-success "></div>
+                </div> 
+             <p  class=" text-light">Ansam Jawabrah</p> 
+  
+              </li>
+            </ul>
+         <!------------------Plus list------------------------>
+            <div
+            class="icon rounded-circle  d-flex align-items-center justify-content-center mx-1
+            "
+            style="width: 34px; height: 34px"
+            type="button"
+            id="plusMenu"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+          <i class="fa-solid fa-plus text-light"></i>
+          </div>
+
+            <ul class="dropdown-menu border-0 shadow p-3 overflow-y-cursor " aria-labelledby="plusMenu" style="width:300px ;height: 500px;">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+           </div>
+           
+        </div>
+      </div> 
+       </div>
+       <!----------------------Body----------------------->
+
+  <div class="main container-fluid p-0 position-relative d-flex justify-content-start "> 
+  <div class="row d-flex justify-content-center" style="width:100%;">
+    <!----------------------main left side----------------------->
+
+   <div class="col1 col-lg-3 d-none d-xl-block d-flex justify-content-start position-relative">
+    <ul class="navbar-nav d-flex flex-column" style="padding-top:20px;">
+      <li class="btn p-1 rounded d-flex">
+      <img src="assest/img/fi.jpg" alt="Profile photo" class="rounded-circle me-1 " style="width: 34px; height: 34px; object-fit: cover;">
+      <p  class="mt-1 text-light" style="font-weight: bold">Ansam Jawabrah</p> 
+      </li>
+      <li class="list dropdown-item m-1 rounded d-flex p-1">
+      <i class="fa-solid fa-user-group  p-1 text-primary"></i>
+      <p  class="ms-1 text-light" style="font-weight: 500">Friends</p> 
+      </li>
+      <li class=" list dropdown-item m-1 rounded d-flex p-1 ">
+        <i class="position-relative fas fa-users p-1 text-primary"></i>
+      <p  class="ms-1 text-light" style="font-weight: 500">Groups</p> 
+       </li>
+       <li class="list dropdown-item m-1 rounded d-flex p-1">
+        <i class="fa-solid fa-file  p-1 " style="color:rgb(46, 111, 135);"></i>
+       <p  class="ms-1 text-light" style="font-weight: 500">Pages</p> 
+        </li>
+        <li class="list dropdown-item m-1 rounded d-flex p-1">
+          <i class="fa-solid fa-store p-1 text-primary"></i>
+        <p  class="ms-1 text-light" style="font-weight: 500">Marketplace</p> 
+        </li>
+        <li class="list dropdown-item m-1 rounded d-flex p-1">
+          <i class="fa-solid fa-clock-rotate-left  p-1" style="color:rebeccapurple;"></i>
+        <p  class="ms-1 text-light" style="font-weight: 500">Memories</p> 
+        </li>
+        <li class="list dropdown-item m-1 rounded d-flex p-1">
+          <i class="fa-solid fa-film p-1 text-primary"></i>
+         <p  class="ms-1 text-light" style="font-weight: 500">Reels</p> 
+         </li>
+         
+ 
+     <li class=" rounded d-flex">
+  <!----------------According list ------------------>
+    <div id="accordionExample position-relative">
+     <div>
+    <div>
+      <div class="d-flex align-items-center ps-2 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <div class="p-1 rounded-circle bg-secondary d-flex justify-content-center position-relative" style=" width:28px; height: 28px;">
+          <i class="fa-solid fa-angle-down pt-1 text-light"></i>
+        </div>
+        <div class="m-0">
+          <p class="pt-3 ps-1 text-light">See more</p>
+        </div>
+      </div>
+    </div>
+    <!-----------------list------------------>
+    <div id="collapseOne" 
+    class="accordion-collapse collapse"
+     aria-labelledby="headingOne" 
+     data-bs-parent="#accordionExample">
+      <div>
+        <ul class="navbar-nav d-flex flex-column p-0">
+        <li class="list dropdown-item  rounded d-flex">
+          <i class="fa-solid fa-star pt-1 text-warning"></i>
+         <p  class="ms-2 text-light" style="font-weight: 500">Favorite</p> 
+         </li>
+         <li class="list dropdown-item  rounded d-flex">
+          <i class="fa-solid fa-film pt-1 text-primary"></i>
+         <p  class="ms-2 text-light" style="font-weight: 500">Watch</p> 
+         </li>
+         <li class="list dropdown-item  rounded d-flex">
+          <i class="fa-solid fa-droplet pt-1 text-danger"></i>
+         <p  class="ms-2 text-light" style="font-weight: 500">Blood Donation</p> 
+         </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+    </div>
+    </li>
+        </ul>
+        <!------------------Shortcuts---------------->
+        <div class="shortcut  d-flex flex-column text-light fs-6 p-0 w-75">
+        <p class="pt-3 ps-2" style="font-weight: bold; color: rgb(159, 158, 158);">Your Shortcuts</p>
+        <ul class="navbar-nav d-flex flex-column" style="padding-top:5px;">
+          <li class="list dropdown-item d-flex pt-1">
+            <img src="assest/img/sub.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 36px; height: 36px; object-fit: cover;">
+            <p  class="mt-1 text-light">Family Farm</p> 
+          </li>
+          <li class=" list dropdown-item d-flex pt-2">
+            <img src="assest/img/farm.jpeg" alt="Profile photo" class="rounded-circle me-2" style="width: 36px; height: 36px; object-fit: cover;">
+            <p  class="mt-1 text-light">Subway Prince run</p> 
+          </li>
+        </ul>
+        </div>
+      </div>
+         <!------------------Main content-------------------->
+      <div class=" col-lg-5  justify-content-center">
+        <!-------Navbar for sm----------->
+        <nav class="navbar navbar-dark position-relative m-2 d-sm-none rounded" style="background-color: rgb(55, 54, 54); width:100%">
+          <div class="container-fluid d-flex">
+            <div class="wraper d-flex justify-content-between">
+            <div class="row d-flex justify-content-between col-11">
+              <div class="col-1 mx-1 ">
+                <button type="button" class="btn px-2">
+                  <i class="fa-solid fa-house fs-4 text-grey" style="color:rgb(165, 163, 163) ;"></i>
+                </button>
+              </div>
+            
+              <div class="col-1 mx-2">
+                <button type="button" class="btn px-2">
+                  <i class="fa-solid fa-user-group fs-4 text-grey" style="color:rgb(165, 163, 163) ;"></i>   
+                 </button>
+              </div>
+              <div class="col-1 mx-2">
+                <button type="button" class="btn px-2">
+                  <i class="fa-solid fa-store fs-4 " style="color:rgb(165, 163, 163) ;"></i>
+                </button>
+              </div>
+              <div class="col-1 mx-2">
+                <button type="button" class="btn px-2 position-relative">
+                  <i class="fa-solid fa-display fs-4 " style="color:rgb(165, 163, 163) ;"></i>
+                  <span class="position-absolute top-0 translate-middle badge rounded-circle bg-danger text-center" style="width:23px ; height:23px; font-size:12px; text-align: center;">
+                    9+
+                    <span class="visually-hidden"></span>
+                  </span>
+                </button>
+              </div>
+              
+            </div>
+          </div>
+            <button class="navbar-toggler fs-6" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark mt-5 rounded" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="background-color: rgb(55, 54, 54); width: 440px;">
+              
+              <div class="offcanvas-body d-flex justify-content-start">
+                <div class="section1">
+                 <ul class="navbar-nav d-flex" style="padding-top:20px;">
+                  <li class="btn p-1 rounded d-flex">
+                  <img src="assest/img/fi.jpg" alt="Profile photo" class="rounded-circle me-1 " style="width: 34px; height: 34px; object-fit: cover;">
+                  <p  class="mt-1 text-light" style="font-weight: bold">Ansam Jawabrah</p> 
+                  </li>
+                  <li class="list dropdown-item m-1 rounded d-flex p-1">
+                  <i class="fa-solid fa-user-group  p-1 text-primary"></i>
+                  <p  class="ms-1 text-light" style="font-weight: 500">Friends</p> 
+                  </li>
+                  <li class=" list dropdown-item m-1 rounded d-flex p-1 ">
+                    <i class="position-relative fas fa-users p-1 text-primary"></i>
+                  <p  class="ms-1 text-light" style="font-weight: 500">Groups</p> 
+                   </li>
+                   <li class="list dropdown-item m-1 rounded d-flex p-1">
+                    <i class="fa-solid fa-file  p-1 " style="color:rgb(46, 111, 135);"></i>
+                   <p  class="ms-1 text-light" style="font-weight: 500">Pages</p> 
+                    </li>
+                    <li class="list dropdown-item m-1 rounded d-flex p-1">
+                      <i class="fa-solid fa-store p-1 text-primary"></i>
+                    <p  class="ms-1 text-light" style="font-weight: 500">Marketplace</p> 
+                    </li>
+                    <li class="list dropdown-item m-1 rounded d-flex p-1">
+                      <i class="fa-solid fa-clock-rotate-left  p-1" style="color:rebeccapurple;"></i>
+                    <p  class="ms-1 text-light" style="font-weight: 500">Memories</p> 
+                    </li>
+                    <li class="list dropdown-item m-1 rounded d-flex p-1">
+                      <i class="fa-solid fa-film p-1 text-primary"></i>
+                     <p  class="ms-1 text-light" style="font-weight: 500">Reels</p> 
+                     </li>
+                 </ul>
+                 <div class="shortcut  d-flex flex-column text-light fs-6 p-0 w-75">
+                  <p class="pt-3 ps-2" style="font-weight: bold; color: rgb(159, 158, 158);">Your Shortcuts</p>
+                  <ul class="navbar-nav d-flex flex-column" style="padding-top:5px;">
+                    <li class="list dropdown-item d-flex pt-1">
+                      <img src="assest/img/sub.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 36px; height: 36px; object-fit: cover;">
+                      <p  class="mt-1 text-light">Subway Prince run</p> 
+                    </li>
+                    
+                  </ul>
+                  </div>
+                </div>
+            
+                <div class="section2">
+                  <div class="FriendReq  d-flex flex-column text-light fs-6 p-0">
+                    <p class="fri pt-3 fs-6">Friends Request</p>
+                    <ul class="navbar-nav d-flex flex-column" style="padding-top:5px;">
+                      <li class="list dropdown-item pt-1 rounded">
+                        <div class="friend d-flex">
+                        <img src="assest/img/profile-photo.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 25px; height: 25px; object-fit: cover;">
+                        <p  class="pt-2 text-light" style="font-size: 14px;">Shahd Atrash</p> 
+                       </div>
+                        <button type="button" class="btn btn-primary" style="font-size:14px;">Add</button>
+                        <button type="button" class="btn btn-secondary" style="font-size:14px;">Delete</button>
+                      </li>
+                    </ul>
+                    </div>
+                    <div class="Birthday d-flex flex-column text-light fs-6 p-0 position-relative ">
+                      <p class="fri pt-3 fs-6">Birthday</p>
+                      <ul class="  bir navbar-nav d-flex flex-column" style="padding-top:5px;">
+                        <li class="list dropdown-item pt-0 rounded d-flex">
+                          <i class="pt-2 fa-solid fa-gift fs-5 text-danger"></i>
+                          <p  class="ps-1 pt-1 text-light " style="font-size:12px;">Amal Mohammed's<br> birthday is today</p> 
+                        </li>
+                      </ul>
+                      </div>
+                      <p class="text-light">Active now</p>
+                      <ul class="navbar-nav d-flex flex-column" style="padding-top:5px;">
+            
+                        <li class="list dropdown-item  rounded d-flex p-1">
+                          <div class=" position-relative">
+                            <img src="assest/img/th.jpg" alt="Profile photo" class="rounded-circle me-2 position-relative" style="width: 25px; height: 25px; object-fit: cover;">
+                            <div class="cir position-absolute text-danger rounded-circle bg-success "></div>
+                          </div> 
+                       <p  class=" text-light" style="font-size:14px;">Ansam Jawabrah</p> 
+                    </li>
+            
+            
+                        <li class=" list dropdown-item rounded d-flex p-1 ">
+                          <div class="position-relative">
+                          <img src="assest/img/s.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 25px; height: 25px; object-fit: cover;">
+                         <div class="cir position-absolute text-danger rounded-circle bg-success "></div>
+                         </div>
+                         <p  class=" text-light" style="font-size:14px;">Hadeel Ahmed</p> 
+                         </li>
+            
+            
+                         <li class="list dropdown-item rounded d-flex p-1">
+                          <div class="position-relative">
+                          <img src="assest/img/1.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 25px; height: 25px; object-fit: cover;">
+                          <div class="cir position-absolute text-danger rounded-circle bg-success"></div>
+                          </div>
+                          <p  class=" text-light" style="font-size:14px;">Qamar Ahmed</p> 
+                          </li>
+            
+                          <li class="list dropdown-item rounded d-flex p-1">
+                            <div class="position-relative">
+                            <img src="assest/img/2.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 25px; height: 25px; object-fit: cover;">
+                            <div class="cir position-absolute text-danger rounded-circle bg-success"></div> 
+                            </div>
+                            <p  class=" text-light" style="font-size:14px;">Weaam Jawabrah</p> 
+                          </li>
+            
+                          <li class="list dropdown-item rounded d-flex p-1">
+                            <div class="position-relative">
+                            <img src="assest/img/3.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 25px; height: 25px; object-fit: cover;">
+                            <div class="cir position-absolute text-danger rounded-circle bg-success"></div>
+                          </div> 
+                         <p  class=" text-light" style="font-size:14px;">Sura Baker</p> 
+                          </li>
+                      
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+
+          <!-------------------Create Syory----------------->
+      
+      <div class="part1 mt-3 ms-2 d-flex justify-content-around align-items-center " style="width:100%; height:60px;background-color: rgb(43, 42, 42);border-top-left-radius:20px; border-top-right-radius:20px;">
+        <div class="icon1 d-flex pt-3 btn">
+        <i class="fa-solid fa-book-open fs-5 pt-1" style=" color:rgb(165, 163, 163) ;"></i>
+        <p class="ms-1 text-light" style="color:rgb(165, 163, 163) ;">Stories</p>
+        </div>
+        <div class="icon2  d-flex pt-3 btn">
+        <i class="fa-solid fa-film fs-5 pt-1" style="color:rgb(165, 163, 163) ;">
+        </i>
+        <p class="ms-1 text-light" style="color:rgb(165, 163, 163) ;">Reels</p>
+        </div>
+        <div class="icon3 d-flex pt-3 btn">
+        <i class="fa-solid fa-video fs-5 pt-1" style="color:rgb(165, 163, 163) ;"></i>
+        <p class="ms-1 text-light" style="color:rgb(165, 163, 163) ; font-size:15px;">Rooms</p>
+         </div>
+
+      </div>
+
+      <!--------------------------Slider-------------------------->
+      <div id="carouselExampleControls" class="carousel slide mt-0 ms-2 position-relative" style="width:100%; height: 280px; background-color: rgb(43, 42, 42)" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex position-relative d-flex justify-content-between pt-1" style="height:300px; width: 100%;">
+              <div class="slid ms-2  position-relative pt-2 mt-2" type="button" style="width:133px;border-radius: 25px; display: inline-block;">
+                <img src="assest/img/th.jpg" alt="Story create" class="card-img-top  " style="height:210px; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="slid ms-2 position-relative pt-2 mt-2" type="button" style="width:133px;border-radius: 25px; display: inline-block;">
+                <img src="assest/img/fi.jpg" alt="Story create" class="card-img-top  " style="height:210px; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="slid ms-2 position-relative pt-2 mt-2" type="button" style="width:133px;border-radius: 25px; display: inline-block;">
+                <img src="assest/img/s.jpg" alt="Story create" class="card-img-top  " style="height:210px; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="slid ms-2 position-relative pt-2 mt-2" type="button" style="width:133px;border-radius: 25px; display: inline-block;">
+                <img src="assest/img/1.jpg" alt="Story create" class="card-img-top  " style="height:210px; object-fit: cover; border-radius: 10px;">
+              </div>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex position-relative d-flex justify-content-between pt-1" style="height:300px; width: 100%;">
+              <div class="slid ms-2 position-relative pt-2 mt-2" type="button" style="width:133px;border-radius: 25px; display: inline-block;">
+                <img src="assest/img/2.jpg" alt="Story create" class="card-img-top  " style="height:210px; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="slid ms-2 position-relative pt-2 mt-2" type="button" style="width:133px;border-radius: 25px; display: inline-block;">
+                <img src="assest/img/3.jpg" alt="Story create" class="card-img-top  " style="height:210px; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="slid ms-2 position-relative pt-2 mt-2" type="button" style="width:133px;border-radius: 25px; display: inline-block;">
+                <img src="assest/img/s.jpg" alt="Story create" class="card-img-top  " style="height:210px; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="slid ms-2 position-relative pt-2 mt-2" type="button" style="width:133px;border-radius: 25px; display: inline-block;">
+                <img src="assest/img/fi.jpg" alt="Story create" class="card-img-top  " style="height:210px; object-fit: cover; border-radius: 10px;">
+              </div>
+            </div> 
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+ 
+ <!--------------------------------------------------------------->
+  <div class=" m-1 mt-3 text-center" style="background-color: rgb(43, 42, 42);border-radius: 20px;width:100%">
+       <div class="writePost p-3 d-flex" style="background-color: rgb(43, 42, 42); border-top-left-radius:15px ;border-top-right-radius: 15px;">
+       <div class="d-flex">
+        <img src="assest/img/fi.jpg" alt="Profile photo" class="rounded-circle me-1 " style="width: 40px; height: 40px; object-fit: cover;">
+       </div>
+       
+        <span
+        class=" btn input-group-prepend  w-75 "
+        id="searchMenu"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <div
+          class="input-group-text  border-0 rounded-pill"
+          style="min-height: 40px; min-width: 230px;color: rgb(212, 207, 207);background-color: rgb(78, 78, 78);"
+        >
+          <i class="fas fa-search me-2 "></i>
+          <p class="m-0 fs-7 ">What's on your mind, Ansam?</p>
+        </div>
+      </span>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="false" style=" height: 600px;">
+        <div class="modal-dialog modal-dialog-centered position-relative" style="background-color: rgb(58, 57, 57);">
+          <div class="modal-content border-0" style="background-color: rgb(58, 57, 57);" >
+            <div class="modal-header align-items-center">
+              <h5 class="modal-title text-center w-100 fs-5 m-0 text-light" id="exampleModalLabel">Create post</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="my-1 p-1">
+              <div class="d-flex">
+                <div class="d-flex align-items-center">
+                 <div class="p-2">
+                  <img src="assest/img/fi.jpg" alt="Profile photo" class="rounded-circle me-1 " style="width: 40px; height: 40px; object-fit: cover;">
+                 </div>
+                 <div>
+                  <div><p class="m-0 pt-1 text-light">Ansam </p></div>
+                  
+                  
+                 </div>
+                </div>
+               </div>
+               <select class="form-select mt-1 w-25 fs-7 bg-secondary" aria-label="Default select example">
+                <option value="1" class="text-light">Public</option>
+                <option value="2" class="text-light">On Top</option>
+                <option value="3" class="text-light">Hide</option>
+              </select>
+              <div class=" m-1" style="width:70%; height:100px">
+                <div class="form-floating">
+                  <textarea class="form-control fs-6 text-light" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px ;width:100% ;background-color: rgb(58, 57, 57); border: none;"></textarea>
+                  <label class="text-light" for="floatingTextarea2">What's on your mind?</label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 pt-5">
+                <div><p class="fw-bold text-light">Add to our post</p></div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-microphone text-danger ms-1 fs-5 btn"></i>
+                  <i class="fa-solid fa-user-plus text-primary ms-1 fs-5 btn"></i>
+                  <i class="fa-regular fa-face-smile text-secondary ms-1 fs-5 btn"></i>
+                  <i class="fa-solid fa-location-dot text-warning ms-1 fs-5 btn"></i>
+                </div>
+              </div>
+
+              </div>
+            </div>
+            <div class="modal-footer pt-5" >
+              <button type="button" class="btn btn-primary" style="width:100% ;">Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </ul>
+       </div>
+        <div class="card-body " style="background-color: rgb(43, 42, 42); border-bottom-left-radius:15px ;border-bottom-right-radius: 15px; border-top: 1px solid rgb(74, 74, 73);">
+          <div class=" d-flex justify-content-around align-items-center ">
+            <div class="icon1 d-flex pt-1 btn">
+              <i class="fa-solid fa-video fs-5 pt-1 text-danger" ></i>
+            <p class="ms-1 text-light" style="color:rgb(55, 53, 53) ;">Live video</p>
+            </div>
+
+            <div class="icon2  d-flex pt-1 btn">
+              <i class="fa-solid fa-photo-film fs-6 text-success pt-1"></i>
+            <p class="ms-1 text-light" style="color:rgb(165, 163, 163) ;">Reels</p>
+            </div>
+
+            <div class="icon3 d-flex pt-1 btn">
+              <i class="fa-regular fa-face-laugh fs-5 pt-1 text-warning"></i>
+            <p class="ms-1 text-light" style="color:rgb(165, 163, 163) ; font-size:15px;">Rooms</p>
+             </div>
+    
+             </div>   
+             </div>
+      </div>
+      
+      </div>
+      <!-------------------------- Main Right side--------------------------->
+      <!---------Friend request---->
+
+      <div class=" col-lg-4 d-none d-xl-block d-flex justify-content-center position-relative ps-5 ">
+        <div class="FriendReq  d-flex flex-column text-light fs-6 p-0">
+          <p class="fri pt-3 fs-6">Friends Request</p>
+          <ul class="navbar-nav d-flex flex-column" style="padding-top:5px;">
+            <li class="list dropdown-item pt-1 rounded">
+              <div class="friend d-flex">
+              <img src="assest/img/profile-photo.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+              <p  class="pt-2 text-light">Shahd Atrash</p> 
+             </div>
+              <button type="button" class="btn btn-primary m-2">Add Friend</button>
+              <button type="button" class="btn btn-secondary ">Delete</button>
+            </li>
+          </ul>
+          </div>
+          <!------------------------Birthday------------------------>
+          <div class="Birthday d-flex flex-column text-light fs-6 p-0 position-relative ">
+            <p class="fri pt-3 fs-6">Birthday</p>
+            <ul class="  bir navbar-nav d-flex flex-column" style="padding-top:5px;">
+              <li class="list dropdown-item pt-1 rounded d-flex">
+                <i class="pt-0 fa-solid fa-gift fs-5 text-danger"></i>
+                <p  class="ps-1 pt-1 text-light">Amal Mohammed's birthday is today</p> 
+            </ul>
+            </div>
+            <!-----------------Contacts-------------->
+          <div class="contacts text-light fs-6 p-0 position-relative">
+            <div class="d-flex justify-content-between align-items-center">
+           <p class="con pt-2 text-light" style="font-weight:600;">Contacts</p>
+           <div class="text-secondary d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-video ps-3 fs-6 btn" style="color:rgba(226, 226, 226, 0.736);"></i>
+            <i class="fa-solid fa-magnifying-glass ps-3 fs-6 btn" style="color:rgba(226, 226, 226, 0.736);"></i>
+            <p class="d-inline ps-3 fs-6 btn" style="font-weight: bold; color:rgba(226, 226, 226, 0.736);">...</p>
+           </div>
+           </div>
+
+
+           <ul class="navbar-nav d-flex flex-column" style="padding-top:5px;">
+            
+            <li class="list dropdown-item  rounded d-flex p-1">
+              <div class=" position-relative">
+                <img src="assest/img/th.jpg" alt="Profile photo" class="rounded-circle me-2 position-relative" style="width: 30px; height: 30px; object-fit: cover;">
+                <div class="cir position-absolute text-danger rounded-circle bg-success "></div>
+              </div> 
+           <p  class=" text-light">Ansam Jawabrah</p> 
+
+            </li>
+
+
+            <li class=" list dropdown-item rounded d-flex p-1 ">
+              <div class="position-relative">
+              <img src="assest/img/s.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 30px; height: 30px; object-fit: cover;">
+             <div class="cir position-absolute text-danger rounded-circle bg-success "></div>
+             </div>
+             <p  class=" text-light">Hadeel Ahmed</p> 
+             </li>
+
+
+             <li class="list dropdown-item rounded d-flex p-1">
+              <div class="position-relative">
+              <img src="assest/img/1.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 30px; height: 30px; object-fit: cover;">
+              <div class="cir position-absolute text-danger rounded-circle bg-success"></div>
+              </div>
+              <p  class=" text-light">Qamar Ahmed</p> 
+              </li>
+
+              <li class="list dropdown-item rounded d-flex p-1">
+                <div class="position-relative">
+                <img src="assest/img/2.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 30px; height: 30px; object-fit: cover;">
+                <div class="cir position-absolute text-danger rounded-circle bg-success"></div> 
+                </div>
+                <p  class=" text-light">Weaam Jawabrah</p> 
+              </li>
+
+              <li class="list dropdown-item rounded d-flex p-1">
+                <div class="position-relative">
+                <img src="assest/img/3.jpg" alt="Profile photo" class="rounded-circle me-2" style="width: 30px; height: 30px; object-fit: cover;">
+                <div class="cir position-absolute text-danger rounded-circle bg-success"></div>
+              </div> 
+             <p  class=" text-light">Sura Baker</p> 
+              </li>
+              <li class="list dropdown-item  rounded d-flex p-1">
+                <div class=" position-relative">
+                  <img src="assest/img/6.jpg" alt="Profile photo" class="rounded-circle me-2 position-relative" style="width: 30px; height: 30px; object-fit: cover;">
+                  <div class="cir position-absolute text-danger rounded-circle bg-success"></div>
+                </div> 
+             <p  class=" text-light">Lana Zaid</p> 
+  
+              </li>
+             
+              </ul>
+
+          </div>
+          <!----------------------------end!----------------->
+      </div>
+
+    </div>
+
+
+   </div>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+      </body> 
+ 
